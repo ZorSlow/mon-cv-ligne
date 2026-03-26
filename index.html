@@ -79,7 +79,7 @@
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-car"></i>
-                    <span>Permis B</span>
+                    <span>Permis B (prévu juillet 2026)</span>
                 </div>
             </div>
             
@@ -90,7 +90,7 @@
                     <a href="https://github.com/ZorSlow" class="social-btn" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="#" class="social-btn" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/boubacar-bah1/" class="social-btn" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
                     <a href="mailto:Boubacar_Bah@outlook.be" class="social-btn" aria-label="Email">
@@ -101,9 +101,9 @@
             
             <!-- CTA Download -->
             <div class="sidebar-cta">
-                <a href="assets/Cv_2025-2026.pdf" class="btn-download" download="Cv_Boubacar_Bah_2025-2026.pdf" title="Télécharger mon CV">
-                    <i class="fas fa-download"></i> Télécharger mon CV
-                </a>
+              <a href="assets/Cv_2025-2026.pdf" id="btn-download-cv" class="btn-download" target="_blank" rel="noopener noreferrer" title="Voir mon CV">
+                <i class="fas fa-file-pdf"></i> Voir mon CV
+              </a>
             </div>
         </aside>
         
@@ -172,51 +172,50 @@
 
                 <div class="projects-grid">
                     <!-- Projet 1 -->
-                    <article class="project-card featured" data-category="backend">
-                        <div class="project-header">
-                            <div class="project-icon">
-                                <i class="fas fa-shopping-cart"></i>
-                            </div>
-                            <span class="project-badge">Projet principal</span>
-                        </div>
-                        <h3 class="project-title">Application de Gestion de Commandes</h3>
-                        <p class="project-description">
-                            Application web complète permettant la gestion des commandes clients 
-                            avec interface utilisateur interactive et base de données relationnelle.
-                        </p>
-                        <div class="project-features">
-                            <div class="feature-item">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Opérations CRUD complètes</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Gestion des utilisateurs</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Génération de rapports</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-check-circle"></i>
-                                <span>Interface responsive</span>
-                            </div>
-                        </div>
-                        <div class="project-tech">
-                            <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
-                            <span class="tech-tag"><i class="fas fa-database"></i> SQL</span>
-                            <span class="tech-tag"><i class="fas fa-code"></i> DataGrip</span>
-                            <span class="tech-tag"><i class="fas fa-terminal"></i> VS Code</span>
-                        </div>
-                        <div class="project-footer">
-                            <a href="https://github.com/TON_GITHUB/REPO-NAME" class="btn-link" target="_blank" rel="noopener noreferrer">
-                                <i class="fab fa-github"></i> Code source
-                            </a>
-                            <a href="#" class="btn-link">
-                                <i class="fas fa-external-link-alt"></i> Démo
-                            </a>
-                        </div>
-                    </article>
+               <article class="project-card featured" data-category="fullstack">
+  <div class="project-header">
+    <div class="project-icon">
+      <i class="fas fa-trophy"></i>
+    </div>
+    <span class="project-badge">Projet principal</span>
+  </div>
+  <h3 class="project-title">Vinci Court</h3>
+  <p class="project-description">
+    Application <strong>Web Full-Stack</strong> de gestion sportive : système de réservation en temps réel, authentification sécurisée et <strong>génération dynamique des tableaux de tournois</strong>.
+  </p>
+  <div class="project-features">
+    <div class="feature-item">
+      <i class="fas fa-check-circle"></i>
+      <span>Logique métier complexe en JavaScript (Node.js/Express)</span>
+    </div>
+    <div class="feature-item">
+      <i class="fas fa-check-circle"></i>
+      <span>Gestion automatique des inscriptions et des paliers de matchs</span>
+    </div>
+    <div class="feature-item">
+      <i class="fas fa-check-circle"></i>
+      <span>Suivi interactif des scores et progression des joueurs</span>
+    </div>
+    <div class="feature-item">
+      <i class="fas fa-users"></i>
+      <span>Développement collaboratif (Git/GitHub) en équipe de 3</span>
+    </div>
+  </div>
+  <div class="project-tech">
+    <span class="tech-tag"><i class="fab fa-js-square"></i> JavaScript</span>
+    <span class="tech-tag"><i class="fab fa-node-js"></i> Node.js</span>
+    <span class="tech-tag"><i class="fas fa-server"></i> Express</span>
+    <span class="tech-tag"><i class="fas fa-database"></i> SQLite</span>
+  </div>
+  <div class="project-footer">
+    <a href="https://github.com/ZorSlow/project_group_26_vinci-court" class="btn-link" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-github"></i> Code source
+    </a>
+    <a href="https://project-group-26-vinci-court.onrender.com" class="btn-link" target="_blank" rel="noopener noreferrer">
+      <i class="fas fa-external-link-alt"></i> Démo
+    </a>
+  </div>
+</article>
                     
                     <!-- Projet 2 -->
                     <article class="project-card" data-category="frontend">
@@ -236,10 +235,13 @@
                             <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
                         </div>
                         <div class="project-footer">
-                            <a href="#" class="btn-link">
-                                <i class="fab fa-github"></i> Voir le code
-                            </a>
-                        </div>
+    <a href="https://github.com/ZorSlow/portfolio" class="btn-link" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-github"></i> Code source
+    </a>
+    <a href="https://zorslow.github.io/portfolio/index.html" class="btn-link" target="_blank" rel="noopener noreferrer">
+      <i class="fas fa-external-link-alt"></i> Démo
+    </a>
+  </div>
                     </article>
                     
                     <!-- Projet 3 - À venir -->
@@ -277,7 +279,7 @@
                                 <div class="skill-info">
                                     <i class="fab fa-js skill-icon" style="color: #f7df1e;"></i>
                                     <span class="skill-name">JavaScript</span>
-                                    <span class="skill-level">Maîtrise</span>
+                                    <span class="skill-level">Intermédiaire</span>
                                 </div>
                                 <div class="skill-bar">
                                     <div class="skill-progress" data-width="80"></div>
@@ -288,7 +290,7 @@
                                 <div class="skill-info">
                                     <i class="fab fa-html5 skill-icon" style="color: #e34f26;"></i>
                                     <span class="skill-name">HTML5 / CSS3</span>
-                                    <span class="skill-level">Maîtrise</span>
+                                    <span class="skill-level">Intermédiaire</span>
                                 </div>
                                 <div class="skill-bar">
                                     <div class="skill-progress" data-width="90"></div>
@@ -299,7 +301,7 @@
                                 <div class="skill-info">
                                     <i class="fas fa-mobile-alt skill-icon"></i>
                                     <span class="skill-name">Responsive Design</span>
-                                    <span class="skill-level">Avancé</span>
+                                    <span class="skill-level">Intermédiaire</span>
                                 </div>
                                 <div class="skill-bar">
                                     <div class="skill-progress" data-width="70"></div>
@@ -329,7 +331,7 @@
                                 <div class="skill-info">
                                     <i class="fas fa-database skill-icon" style="color: #00758f;"></i>
                                     <span class="skill-name">SQL / MySQL</span>
-                                    <span class="skill-level">Maîtrise</span>
+                                    <span class="skill-level">Intermédiaire</span>
                                 </div>
                                 <div class="skill-bar">
                                     <div class="skill-progress" data-width="80"></div>
@@ -348,7 +350,7 @@
                                 <div class="skill-info">
                                     <i class="fab fa-git-alt skill-icon" style="color: #f05032;"></i>
                                     <span class="skill-name">Git / GitHub</span>
-                                    <span class="skill-level">Avancé</span>
+                                    <span class="skill-level">Intermédiaire</span>
                                 </div>
                                 <div class="skill-bar">
                                     <div class="skill-progress" data-width="70"></div>
@@ -359,7 +361,7 @@
                                 <div class="skill-info">
                                     <i class="fab fa-linux skill-icon" style="color: #FCC624;"></i>
                                     <span class="skill-name">Linux</span>
-                                    <span class="skill-level">Bases</span>
+                                    <span class="skill-level">Intermédiaire</span>
                                 </div>
                                 <div class="skill-bar">
                                     <div class="skill-progress" data-width="50"></div>
@@ -572,6 +574,6 @@
     </button>
 
     <!-- JavaScript -->
-    <script src="script-cv.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

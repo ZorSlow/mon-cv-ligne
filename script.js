@@ -50,82 +50,55 @@
     });
   });
 })();
-
-// ==================== FORMULAIRE CONTACT ====================
+// ==================== FORMULAIRE DE CONTACT ====================
 (function setupContactForm() {
-  const form = document.getElementById("contact-form");
-  const nameInput = document.getElementById("name");
-  const emailInput = document.getElementById("email");
-  const messageInput = document.getElementById("message");
-  const messageBox = document.getElementById("form-message");
+  const EMAILJS_PUBLIC_KEY  = "sS5ieVqBebsQA1Mqb";
+  const EMAILJS_SERVICE_ID  = "service_4yzafbx";
+  const EMAILJS_TEMPLATE_ID = "template_1uddp7j";
 
-  if (!form || !nameInput || !emailInput || !messageInput || !messageBox) return;
+  // Charge le SDK et attend qu'il soit prêt avant tout
+  const script = document.createElement("script");
+  script.src = "https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js";
+  script.onload = function () {
+    emailjs.init(EMAILJS_PUBLIC_KEY);
 
-  const setMessage = (text, type) => {
-    messageBox.textContent = text;
-    messageBox.className = "form-message " + type;
-  };
+    const form = document.getElementById("contact-form");
+    const formMessage = document.getElementById("form-message");
 
-  const isValidEmail = (value) =>
-    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(value).toLowerCase());
+    if (!form) return;
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    const name = nameInput.value.trim();
-    const email = emailInput.value.trim();
-    const message = messageInput.value.trim();
-
-    if (!name || !email || !message) {
-      setMessage("Merci de remplir tous les champs.", "error");
-      return;
-    }
-
-    if (!isValidEmail(email)) {
-      setMessage("Merci de saisir une adresse email valide.", "error");
-      return;
-    }
-
-    setMessage(
-      "Merci pour votre message ! Je vous répondrai dès que possible.",
-      "success"
-    );
-
-    form.reset();
-  });
-})();
-
-(() => {
-  const CV_URL = "assets/cv-boubacar-bah.pdf";
-  const CV_FILENAME = "CV-Boubacar-Bah.pdf";
-
-  const downloadBtn = document.getElementById("btn-download-cv");
-  if (downloadBtn) {
-    downloadBtn.addEventListener("click", async (e) => {
-      // L'attribut download suffit souvent, mais fetch+blob rend le comportement plus fiable (mobile / certains navigateurs).
+    form.addEventListener("submit", function (e) {
       e.preventDefault();
 
-      try {
-        const res = await fetch(CV_URL, { cache: "no-store" });
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const btn = form.querySelector("button[type='submit']");
+      const originalHTML = btn.innerHTML;
 
-        const blob = await res.blob();
-        const objectUrl = URL.createObjectURL(blob);
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
+      formMessage.textContent = "";
 
-        const a = document.createElement("a");
-        a.href = objectUrl;
-        a.download = CV_FILENAME;
-        document.body.appendChild(a);
-        a.click();
-        a.remove();
-
-        URL.revokeObjectURL(objectUrl);
-      } catch (err) {
-        alert(
-          `Le CV n'est pas disponible pour le moment.\n\nAjoute ton PDF ici : ${CV_URL}`
-        );
-      }
+    const templateParams = {
+      name:    document.getElementById("name").value,
+      email:   document.getElementById("email").value,
+      message: document.getElementById("message").value,
+};
+      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams)
+        .then(() => {
+          formMessage.textContent = "Message envoyé avec succès !";
+          formMessage.style.color = "green";
+          form.reset();
+        })
+        .catch((error) => {
+          formMessage.textContent = "Erreur lors de l'envoi. Réessaie.";
+          formMessage.style.color = "red";
+          console.error("EmailJS error:", error);
+        })
+        .finally(() => {
+          btn.disabled = false;
+          btn.innerHTML = originalHTML;
+        });
     });
-  }
-})();
+  };
 
+  document.head.appendChild(script);
+})();
