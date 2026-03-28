@@ -1,620 +1,724 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Boubacar Bah - Développeur Web Junior en recherche d'alternance">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio de Boubacar Bah - Développeur Web Junior en recherche d'alternance"
+    />
     <title>Boubacar Bah | Portfolio Développeur Web</title>
-    
+
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
     <!-- ==================== CONTENEUR PRINCIPAL (STYLE CV) ==================== -->
     <div class="portfolio-container">
-        
-        <!-- ==================== SIDEBAR GAUCHE (BLEUE) ==================== -->
-        <aside class="sidebar">
-            <!-- Photo de profil -->
-            <div class="profile-section">
-                <div class="profile-image">
-                    <i class="fas fa-user"></i>
-                </div>
-                <h1 class="profile-name">Boubacar Bah</h1>
-                <p class="profile-title">Développeur Web Junior</p>
-                <p class="profile-subtitle">En recherche d'alternance</p>
-            </div>
+      <!-- ==================== SIDEBAR GAUCHE (BLEUE) ==================== -->
+      <aside class="sidebar">
+        <!-- Photo de profil -->
+        <div class="profile-section">
+          <div class="profile-image">
+            <i class="fas fa-user"></i>
+          </div>
+          <h1 class="profile-name">Boubacar Bah</h1>
+          <p class="profile-title">Développeur Web Junior</p>
+          <p class="profile-subtitle">En recherche d'alternance</p>
+        </div>
 
-            <!-- Toggle Mode Sombre -->
-            <div class="theme-toggle" id="theme-toggle">
-                <i class="fas fa-moon"></i>
-                <span>Mode sombre</span>
-            </div>
-            
-            <!-- Navigation -->
-            <nav class="sidebar-nav">
-                <a href="#home" class="nav-item active">
-                    <i class="fas fa-home"></i>
-                    <span>Accueil</span>
-                </a>
-                <a href="#projects" class="nav-item">
-                    <i class="fas fa-folder-open"></i>
-                    <span>Projets</span>
-                </a>
-                <a href="#skills" class="nav-item">
-                    <i class="fas fa-code"></i>
-                    <span>Compétences</span>
-                </a>
-                <a href="#about" class="nav-item">
-                    <i class="fas fa-user"></i>
-                    <span>À propos</span>
-                </a>
-                <a href="#contact" class="nav-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>Contact</span>
-                </a>
-            </nav>
-            
-            <!-- Informations de contact -->
-            <div class="contact-info">
-                <h3><i class="fas fa-address-card"></i> Contact</h3>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Bruxelles, BE</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>Boubacar_Bah@outlook.be</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>+32 471 31 92 82</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-birthday-cake"></i>
-                    <span>23/12/1999</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-car"></i>
-                    <span>Permis B (prévu juillet 2026)</span>
-                </div>
-            </div>
-            
-            <!-- Réseaux sociaux -->
-            <div class="social-links">
-                <h3><i class="fas fa-share-alt"></i> Réseaux</h3>
-                <div class="social-buttons">
-                    <a href="https://github.com/ZorSlow" class="social-btn" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/boubacar-bah1/" class="social-btn" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:Boubacar_Bah@outlook.be" class="social-btn" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            
-            <!-- CTA Download -->
-            <div class="sidebar-cta">
-              <a href="assets/Cv_2025-2026.pdf" id="btn-download-cv" class="btn-download" target="_blank" rel="noopener noreferrer" title="Voir mon CV">
-                <i class="fas fa-file-pdf"></i> Voir mon CV
+        <!-- Toggle Mode Sombre -->
+        <div class="theme-toggle" id="theme-toggle">
+          <i class="fas fa-moon"></i>
+          <span>Mode sombre</span>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="sidebar-nav">
+          <a href="#home" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Accueil</span>
+          </a>
+          <a href="#projects" class="nav-item">
+            <i class="fas fa-folder-open"></i>
+            <span>Projets</span>
+          </a>
+          <a href="#skills" class="nav-item">
+            <i class="fas fa-code"></i>
+            <span>Compétences</span>
+          </a>
+          <a href="#about" class="nav-item">
+            <i class="fas fa-user"></i>
+            <span>À propos</span>
+          </a>
+          <a href="#contact" class="nav-item">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </nav>
+
+        <!-- Informations de contact -->
+        <div class="contact-info">
+          <h3><i class="fas fa-address-card"></i> Contact</h3>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Bruxelles, BE</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>Boubacar_Bah@outlook.be</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>+32 471 31 92 82</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-birthday-cake"></i>
+            <span>23/12/1999</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-car"></i>
+            <span>Permis B (prévu juillet 2026)</span>
+          </div>
+        </div>
+
+        <!-- Réseaux sociaux -->
+        <div class="social-links">
+          <h3><i class="fas fa-share-alt"></i> Réseaux</h3>
+          <div class="social-buttons">
+            <a
+              href="https://github.com/ZorSlow"
+              class="social-btn"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/boubacar-bah1/"
+              class="social-btn"
+              aria-label="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="mailto:Boubacar_Bah@outlook.be"
+              class="social-btn"
+              aria-label="Email"
+            >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- CTA Download -->
+        <div class="sidebar-cta">
+          <a
+            href="assets/Cv_2025-2026.pdf"
+            id="btn-download-cv"
+            class="btn-download"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Voir mon CV"
+          >
+            <i class="fas fa-file-pdf"></i> Voir mon CV
+          </a>
+        </div>
+      </aside>
+
+      <!-- ==================== CONTENU PRINCIPAL (DROITE) ==================== -->
+      <main class="main-content">
+        <!-- Section Accueil -->
+        <section class="section" id="home">
+          <div class="hero-content">
+            <span class="hero-badge">👋 Bienvenue sur mon portfolio</span>
+            <h2 class="hero-title">Développeur Web Passionné</h2>
+            <p class="hero-description">« Curieux, motivé, rigoureux et déterminé »</p>
+
+            <p class="hero-text">
+              Étudiant en <strong>Informatique de Gestion (cours du soir)</strong> à
+              l'ISFCE depuis janvier 2026, je suis passionné par le développement
+              web et les technologies JavaScript. Fort d'un parcours technique
+              progressif (ULB → HE Vinci → EFP → ISFCE) et de
+              <strong>plus de 6 ans d'expérience professionnelle</strong> dans des
+              secteurs variés, je recherche une entreprise partenaire pour mettre
+              mes compétences en pratique dans une équipe dynamique et continuer
+              à apprendre.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">
+                <i class="fas fa-folder-open"></i> Voir mes projets
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <i class="fas fa-paper-plane"></i> Me contacter
               </a>
             </div>
-        </aside>
-        
-        <!-- ==================== CONTENU PRINCIPAL (DROITE) ==================== -->
-        <main class="main-content">
-            
-            <!-- Section Accueil -->
-            <section class="section" id="home">
-                <div class="hero-content">
-                    <span class="hero-badge">👋 Bienvenue sur mon portfolio</span>
-                    <h2 class="hero-title">Développeur Web Passionné</h2>
-                    <p class="hero-description">
-                        « Curieux, motivé, rigoureux et déterminé »
-                    </p>
-                    <p class="hero-text">
-                        Étudiant en <strong>Informatique de Gestion (cours du soir)</strong> à l'ISFCE depuis janvier 2026, 
-                        je suis passionné par le développement web et les technologies JavaScript. Fort d'un parcours 
-                        technique progressif (ULB → HE Vinci → EFP → ISFCE) et de <strong>plus de 6 ans d'expérience 
-                        professionnelle</strong> dans des secteurs variés, je recherche une entreprise partenaire pour mettre 
-                        mes compétences en pratique dans une équipe dynamique et continuer à apprendre.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">
-                            <i class="fas fa-folder-open"></i> Voir mes projets
-                        </a>
-                        <a href="#contact" class="btn btn-secondary">
-                            <i class="fas fa-paper-plane"></i> Me contacter
-                        </a>
-                    </div>
-                    
-                    <!-- Stats -->
-                    <div class="stats-grid">
-                        <div class="stat-card">
-                            <i class="fas fa-project-diagram"></i>
-                            <div class="stat-number">3+</div>
-                            <div class="stat-label">Projets</div>
-                        </div>
-                        <div class="stat-card">
-                            <i class="fas fa-code"></i>
-                            <div class="stat-number">6+</div>
-                            <div class="stat-label">Technologies</div>
-                        </div>
-                        <div class="stat-card">
-                            <i class="fas fa-briefcase"></i>
-                            <div class="stat-number">6+</div>
-                            <div class="stat-label">Ans d'expérience</div>
-                        </div>
-                    </div>
+
+            <!-- Stats -->
+            <div class="stats-grid">
+              <div class="stat-card">
+                <i class="fas fa-project-diagram"></i>
+                <div class="stat-number">3+</div>
+                <div class="stat-label">Projets</div>
+              </div>
+              <div class="stat-card">
+                <i class="fas fa-code"></i>
+                <div class="stat-number">6+</div>
+                <div class="stat-label">Technologies</div>
+              </div>
+              <div class="stat-card">
+                <i class="fas fa-briefcase"></i>
+                <div class="stat-number">6+</div>
+                <div class="stat-label">Ans d'expérience</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section Projets -->
+        <section class="section" id="projects">
+          <div class="section-header">
+            <h2 class="section-title">Mes Projets</h2>
+            <p class="section-subtitle">Découvrez mes réalisations techniques</p>
+          </div>
+
+          <!-- Filtres Projets -->
+          <div class="project-filters">
+            <button class="project-filter-btn active" data-filter="all">Tous</button>
+            <button class="project-filter-btn" data-filter="frontend">Front-end</button>
+            <button class="project-filter-btn" data-filter="backend">Back-end</button>
+            <button class="project-filter-btn" data-filter="other">Autres</button>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Projet 1 -->
+            <article class="project-card featured" data-category="fullstack">
+              <div class="project-header">
+                <div class="project-icon">
+                  <i class="fas fa-trophy"></i>
                 </div>
-            </section>
-            
-            <!-- Section Projets -->
-            <section class="section" id="projects">
-                <div class="section-header">
-                    <h2 class="section-title">Mes Projets</h2>
-                    <p class="section-subtitle">Découvrez mes réalisations techniques</p>
+                <span class="project-badge">Projet principal</span>
+              </div>
+              <h3 class="project-title">Vinci Court</h3>
+              <p class="project-description">
+                Application <strong>Web Full-Stack</strong> de gestion sportive :
+                système de réservation en temps réel, authentification sécurisée
+                et <strong>génération dynamique des tableaux de tournois</strong>.
+              </p>
+              <div class="project-features">
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Logique métier complexe en JavaScript (Node.js/Express)</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Gestion automatique des inscriptions et des paliers de matchs</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Suivi interactif des scores et progression des joueurs</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-users"></i>
+                  <span>Développement collaboratif (Git/GitHub) en équipe de 3</span>
+                </div>
+              </div>
+              <div class="project-tech">
+                <span class="tech-tag"><i class="fab fa-js-square"></i> JavaScript</span>
+                <span class="tech-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                <span class="tech-tag"><i class="fas fa-server"></i> Express</span>
+                <span class="tech-tag"><i class="fas fa-database"></i> SQLite</span>
+              </div>
+              <div class="project-footer">
+                <a
+                  href="https://github.com/ZorSlow/project_group_26_vinci-court"
+                  class="btn-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i> Code source
+                </a>
+                <a
+                  href="https://project-group-26-vinci-court.onrender.com"
+                  class="btn-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-external-link-alt"></i> Démo
+                </a>
+              </div>
+            </article>
+
+            <!-- Projet 2 - Nouveau -->
+            <article class="project-card" data-category="backend">
+              <div class="project-header">
+                <div class="project-icon">
+                  <i class="fas fa-server"></i>
+                </div>
+                <span class="project-badge">Architecture & Backend</span>
+              </div>
+              <h3 class="project-title">ClassyHouse - Backend</h3>
+              <p class="project-description">
+                Conception de la structure de données et de la logique serveur
+                pour une boutique de décoration. Focus sur l'intégrité des données
+                et le SAV (Service Après-Vente).
+              </p>
+              <div class="project-features">
+                <div class="feature-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Modélisation SQL : Gestion des membres, commandes et tickets SAV.</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-lock"></i>
+                  <span>Sécurité : Implémentation du hachage Bcrypt pour l'authentification.</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-file-alt"></i>
+                  <span>Documentation : Diagramme de structure (DSD) et scénarios de tests.</span>
+                </div>
+              </div>
+              <div class="project-tech">
+                <span class="tech-tag"><i class="fas fa-database"></i> SQLite</span>
+                <span class="tech-tag"><i class="fab fa-python"></i> Python / Flask</span>
+                <span class="tech-tag"><i class="fas fa-terminal"></i> SQL Script</span>
+              </div>
+              <div class="project-footer">
+                <a
+                  href="https://github.com/ZorSlow/ZorSlow-ClassyHouse-Project"
+                  class="btn-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i> Voir les sources
+                </a>
+                <a
+                  href="https://github.com/ZorSlow/ZorSlow-ClassyHouse-Project/blob/main/examen_project.sql"
+                  class="btn-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-terminal"></i> Script SQL
+                </a>
+              </div>
+            </article>
+
+            <!-- Projet 2 -->
+            <article class="project-card" data-category="frontend">
+              <div class="project-header">
+                <div class="project-icon">
+                  <i class="fas fa-laptop-code"></i>
+                </div>
+              </div>
+              <h3 class="project-title">Portfolio Personnel</h3>
+              <p class="project-description">
+                Portfolio responsive créé from scratch en HTML/CSS/JS pur,
+                démontrant mes compétences front-end.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+                <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+              </div>
+              <div class="project-footer">
+                <a
+                  href="https://github.com/ZorSlow/portfolio"
+                  class="btn-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i> Code source
+                </a>
+                <a
+                  href="https://zorslow.github.io/portfolio/index.html#home"
+                  class="btn-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-external-link-alt"></i> Démo
+                </a>
+              </div>
+            </article>
+
+            <!-- Projet 3 - À venir -->
+            <article class="project-card upcoming" data-category="other">
+              <div class="project-header">
+                <div class="project-icon">
+                  <i class="fas fa-lightbulb"></i>
+                </div>
+                <span class="project-badge coming-soon">Bientôt</span>
+              </div>
+              <h3 class="project-title">Prochain Projet</h3>
+              <p class="project-description">
+                Espace réservé pour mes futurs projets : API REST, Application
+                React, ou tout autre défi technique passionnant.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <!-- Section Compétences -->
+        <section class="section" id="skills">
+          <div class="section-header">
+            <h2 class="section-title">Compétences Techniques</h2>
+            <p class="section-subtitle">Technologies que je maîtrise</p>
+          </div>
+
+          <div class="skills-container">
+            <!-- Front-End -->
+            <div class="skill-category">
+              <h3 class="category-title">
+                <i class="fas fa-palette"></i> Front-End
+              </h3>
+              <div class="skill-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <i class="fab fa-js skill-icon" style="color: #f7df1e;"></i>
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-level">Intermédiaire</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="80"></div>
+                  </div>
                 </div>
 
-                <!-- Filtres Projets -->
-                <div class="project-filters">
-                    <button class="project-filter-btn active" data-filter="all">Tous</button>
-                    <button class="project-filter-btn" data-filter="frontend">Front-end</button>
-                    <button class="project-filter-btn" data-filter="backend">Back-end</button>
-                    <button class="project-filter-btn" data-filter="other">Autres</button>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <i class="fab fa-html5 skill-icon" style="color: #e34f26;"></i>
+                    <span class="skill-name">HTML5 / CSS3</span>
+                    <span class="skill-level">Intermédiaire</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="90"></div>
+                  </div>
                 </div>
 
-                <div class="projects-grid">
-                    <!-- Projet 1 -->
-               <article class="project-card featured" data-category="fullstack">
-  <div class="project-header">
-    <div class="project-icon">
-      <i class="fas fa-trophy"></i>
-    </div>
-    <span class="project-badge">Projet principal</span>
-  </div>
-  <h3 class="project-title">Vinci Court</h3>
-  <p class="project-description">
-    Application <strong>Web Full-Stack</strong> de gestion sportive : système de réservation en temps réel, authentification sécurisée et <strong>génération dynamique des tableaux de tournois</strong>.
-  </p>
-  <div class="project-features">
-    <div class="feature-item">
-      <i class="fas fa-check-circle"></i>
-      <span>Logique métier complexe en JavaScript (Node.js/Express)</span>
-    </div>
-    <div class="feature-item">
-      <i class="fas fa-check-circle"></i>
-      <span>Gestion automatique des inscriptions et des paliers de matchs</span>
-    </div>
-    <div class="feature-item">
-      <i class="fas fa-check-circle"></i>
-      <span>Suivi interactif des scores et progression des joueurs</span>
-    </div>
-    <div class="feature-item">
-      <i class="fas fa-users"></i>
-      <span>Développement collaboratif (Git/GitHub) en équipe de 3</span>
-    </div>
-  </div>
-  <div class="project-tech">
-    <span class="tech-tag"><i class="fab fa-js-square"></i> JavaScript</span>
-    <span class="tech-tag"><i class="fab fa-node-js"></i> Node.js</span>
-    <span class="tech-tag"><i class="fas fa-server"></i> Express</span>
-    <span class="tech-tag"><i class="fas fa-database"></i> SQLite</span>
-  </div>
-  <div class="project-footer">
-    <a href="https://github.com/ZorSlow/project_group_26_vinci-court" class="btn-link" target="_blank" rel="noopener noreferrer">
-      <i class="fab fa-github"></i> Code source
-    </a>
-    <a href="https://project-group-26-vinci-court.onrender.com" class="btn-link" target="_blank" rel="noopener noreferrer">
-      <i class="fas fa-external-link-alt"></i> Démo
-    </a>
-  </div>
-</article>
-                    
-                    <!-- Projet 2 -->
-                    <article class="project-card" data-category="frontend">
-                        <div class="project-header">
-                            <div class="project-icon">
-                                <i class="fas fa-laptop-code"></i>
-                            </div>
-                        </div>
-                        <h3 class="project-title">Portfolio Personnel</h3>
-                        <p class="project-description">
-                            Portfolio responsive créé from scratch en HTML/CSS/JS pur, 
-                            démontrant mes compétences front-end.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
-                            <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
-                            <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
-                        </div>
-                        <div class="project-footer">
-    <a href="https://github.com/ZorSlow/portfolio" class="btn-link" target="_blank" rel="noopener noreferrer">
-      <i class="fab fa-github"></i> Code source
-    </a>
-    <a href="https://zorslow.github.io/portfolio/index.html#home" class="btn-link" target="_blank" rel="noopener noreferrer">
-      <i class="fas fa-external-link-alt"></i> Démo
-    </a>
-  </div>
-                    </article>
-                    
-                    <!-- Projet 3 - À venir -->
-                    <article class="project-card upcoming" data-category="other">
-                        <div class="project-header">
-                            <div class="project-icon">
-                                <i class="fas fa-lightbulb"></i>
-                            </div>
-                            <span class="project-badge coming-soon">Bientôt</span>
-                        </div>
-                        <h3 class="project-title">Prochain Projet</h3>
-                        <p class="project-description">
-                            Espace réservé pour mes futurs projets : API REST, Application React, 
-                            ou tout autre défi technique passionnant.
-                        </p>
-                    </article>
-                    
-                    <!-- Projet 2 - Nouveau -->
-                    <article class="project-card" data-category="backend">
-  <div class="project-header">
-    <div class="project-icon">
-      <i class="fas fa-database"></i>
-    </div>
-    <span class="project-badge">Architecture BDD</span>
-  </div>
-  <h3 class="project-title">The Curtain Shop</h3>
-  <p class="project-description">
-    Application e-commerce avec une gestion complexe de base de données : suivi de commandes, ticketing SAV et gestion de favoris.
-  </p>
-  <div class="project-features">
-    <div class="feature-item">
-      <i class="fas fa-check-circle"></i>
-      <span>Script SQL complet : création de 7 tables et peuplement de données de test.</span>
-    </div>
-    <div class="feature-item">
-      <i class="fas fa-lock"></i>
-      <span>Sécurité : hachage Bcrypt pour les mots de passe (Admin / Membre).</span>
-    </div>
-    <div class="feature-item">
-      <i class="fas fa-project-diagram"></i>
-      <span>Modélisation : DSD respectant les contraintes métier (1‑N, N‑N).</span>
-    </div>
-  </div>
-  <div class="project-tech">
-    <span class="tech-tag"><i class="fas fa-database"></i> SQL / SQLite</span>
-    <span class="tech-tag"><i class="fab fa-python"></i> Python / Flask</span>
-    <span class="tech-tag"><i class="fas fa-file-code"></i> Scripts de test</span>
-  </div>
-  <div class="project-footer">
-    <a href="https://github.com/ZorSlow/The-Curtain-Shop" class="btn-link" target="_blank" rel="noopener noreferrer">
-      <i class="fab fa-github"></i> Voir le code
-    </a>
-    <a href="https://github.com/ZorSlow/The-Curtain-Shop/blob/main/install.sql" class="btn-link" target="_blank" rel="noopener noreferrer">
-      <i class="fas fa-terminal"></i> Script SQL d'installation
-    </a>
-  </div>
-</article>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <i class="fas fa-mobile-alt skill-icon"></i>
+                    <span class="skill-name">Responsive Design</span>
+                    <span class="skill-level">Intermédiaire</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="70"></div>
+                  </div>
                 </div>
-            </section>
-            
-            <!-- Section Compétences -->
-            <section class="section" id="skills">
-                <div class="section-header">
-                    <h2 class="section-title">Compétences Techniques</h2>
-                    <p class="section-subtitle">Technologies que je maîtrise</p>
+              </div>
+            </div>
+
+            <!-- Back-End -->
+            <div class="skill-category">
+              <h3 class="category-title">
+                <i class="fas fa-server"></i> Back-End &amp; BDD
+              </h3>
+              <div class="skill-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <i class="fab fa-python skill-icon" style="color: #3776ab;"></i>
+                    <span class="skill-name">Python</span>
+                    <span class="skill-level">Intermédiaire</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="60"></div>
+                  </div>
                 </div>
-                
-                <div class="skills-container">
-                    <!-- Front-End -->
-                    <div class="skill-category">
-                        <h3 class="category-title">
-                            <i class="fas fa-palette"></i> Front-End
-                        </h3>
-                        <div class="skill-list">
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <i class="fab fa-js skill-icon" style="color: #f7df1e;"></i>
-                                    <span class="skill-name">JavaScript</span>
-                                    <span class="skill-level">Intermédiaire</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="80"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <i class="fab fa-html5 skill-icon" style="color: #e34f26;"></i>
-                                    <span class="skill-name">HTML5 / CSS3</span>
-                                    <span class="skill-level">Intermédiaire</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="90"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <i class="fas fa-mobile-alt skill-icon"></i>
-                                    <span class="skill-name">Responsive Design</span>
-                                    <span class="skill-level">Intermédiaire</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="70"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Back-End -->
-                    <div class="skill-category">
-                        <h3 class="category-title">
-                            <i class="fas fa-server"></i> Back-End & BDD
-                        </h3>
-                        <div class="skill-list">
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <i class="fab fa-python skill-icon" style="color: #3776ab;"></i>
-                                    <span class="skill-name">Python</span>
-                                    <span class="skill-level">Intermédiaire</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="60"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <i class="fas fa-database skill-icon" style="color: #00758f;"></i>
-                                    <span class="skill-name">SQL / MySQL</span>
-                                    <span class="skill-level">Intermédiaire</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="80"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Outils -->
-                    <div class="skill-category">
-                        <h3 class="category-title">
-                            <i class="fas fa-tools"></i> Outils & Versioning
-                        </h3>
-                        <div class="skill-list">
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <i class="fab fa-git-alt skill-icon" style="color: #f05032;"></i>
-                                    <span class="skill-name">Git / GitHub</span>
-                                    <span class="skill-level">Intermédiaire</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="70"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="skill-item">
-                                <div class="skill-info">
-                                    <i class="fab fa-linux skill-icon" style="color: #FCC624;"></i>
-                                    <span class="skill-name">Linux</span>
-                                    <span class="skill-level">Intermédiaire</span>
-                                </div>
-                                <div class="skill-bar">
-                                    <div class="skill-progress" data-width="50"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <i class="fas fa-database skill-icon" style="color: #00758f;"></i>
+                    <span class="skill-name">SQL / MySQL</span>
+                    <span class="skill-level">Intermédiaire</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="80"></div>
+                  </div>
                 </div>
-                
-                <!-- Bureautique & Langues -->
-                <div class="additional-skills">
-                    <div class="skill-box">
-                        <h3><i class="fas fa-laptop"></i> Bureautique</h3>
-                        <div class="tags">
-                            <span class="tag">Word - Maîtrise</span>
-                            <span class="tag">Excel - Avancé</span>
-                            <span class="tag">PowerPoint - Maîtrise</span>
-                        </div>
-                    </div>
-                    
-                    <div class="skill-box">
-                        <h3><i class="fas fa-language"></i> Langues</h3>
-                        <div class="tags">
-                            <span class="tag">🇫🇷 Français - Maternelle</span>
-                            <span class="tag">Peul - Maternelle</span>
-                            <span class="tag">🇳🇱 Néerlandais - B1</span>
-                            <span class="tag">🇬🇧 Anglais - A2</span>
-                        </div>
-                    </div>
+              </div>
+            </div>
+
+            <!-- Outils -->
+            <div class="skill-category">
+              <h3 class="category-title">
+                <i class="fas fa-tools"></i> Outils &amp; Versioning
+              </h3>
+              <div class="skill-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <i class="fab fa-git-alt skill-icon" style="color: #f05032;"></i>
+                    <span class="skill-name">Git / GitHub</span>
+                    <span class="skill-level">Intermédiaire</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="70"></div>
+                  </div>
                 </div>
-            </section>
-            
-            <!-- Section À propos -->
-            <section class="section" id="about">
-                <div class="section-header">
-                    <h2 class="section-title">À Propos de Moi</h2>
-                    <p class="section-subtitle">Mon parcours et mes expériences</p>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <i class="fab fa-linux skill-icon" style="color: #FCC624;"></i>
+                    <span class="skill-name">Linux</span>
+                    <span class="skill-level">Intermédiaire</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" data-width="50"></div>
+                  </div>
                 </div>
-                
-                <div class="about-content">
-                    <!-- Formation COMPLÈTE -->
-                    <div class="info-block">
-                        <h3 class="block-title">
-                            <i class="fas fa-graduation-cap"></i> Parcours Académique Complet
-                        </h3>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <span class="timeline-date">Janvier 2026 - Aujourd'hui</span>
-                                <h4>Bachelier Informatique de Gestion (Cours du soir)</h4>
-                                <p>ISFCE - Institut Supérieur de Formation Continue, Bruxelles</p>
-                                <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.9;">Validation des dernières unités pour l'obtention du diplôme en parallèle d'une alternance.</p>
-                            </div>
-                            <div class="timeline-item">
-                                <span class="timeline-date">Sept 2025 - Aujourd'hui</span>
-                                <h4>Formation Développeur Web Front-end</h4>
-                                <p>EFP - École de Formation en Alternance, Bruxelles</p>
-                                <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.9;">Spécialisation intensive : HTML5, CSS3, JavaScript ES6+, frameworks modernes, responsive design.</p>
-                            </div>
-                            <div class="timeline-item">
-                                <span class="timeline-date">2022 - 2025</span>
-                                <h4>Bachelier Informatique de Gestion / Développement d'applications</h4>
-                                <p>HE Léonard de Vinci (IPL), Bruxelles</p>
-                                <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.9;">Programmation (Python, Java, JavaScript), SQL, algorithmique. Grande partie validée avec succès.</p>
-                            </div>
-                            <div class="timeline-item">
-                                <span class="timeline-date">2021 - 2022</span>
-                                <h4>Bachelier Sciences Informatiques (Bloc 1)</h4>
-                                <p>Université Libre de Bruxelles (ULB)</p>
-                                <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.9;">Fondamentaux : Python, mathématiques appliquées, logique et algorithmique.</p>
-                            </div>
-                            <div class="timeline-item">
-                                <span class="timeline-date">2014 - 2021</span>
-                                <h4>CESS - Sciences Sociales</h4>
-                                <p>Lycée Émile Max, Bruxelles</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Expérience COMPLÈTE -->
-                    <div class="info-block">
-                        <h3 class="block-title">
-                            <i class="fas fa-briefcase"></i> Expérience Professionnelle Complète
-                        </h3>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <span class="timeline-date">2023</span>
-                                <h4>Agent de nettoyage de tapis</h4>
-                                <p><strong>Composil</strong>, Bruxelles</p>
-                                <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.9;">Nettoyage professionnel (aspiration, détachage, injection-extraction). Respect HSE, contrôle qualité, autonomie.</p>
-                            </div>
-                            <div class="timeline-item">
-                                <span class="timeline-date">2022 - 2025</span>
-                                <h4>Chargeur</h4>
-                                <p><strong>Renewi</strong>, Vilvorde</p>
-                                <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.9;">Collecte déchets, chargement/déchargement conteneurs. Respect strict sécurité, travail d'équipe dynamique.</p>
-                            </div>
-                            <div class="timeline-item">
-                                <span class="timeline-date">2022 - 2023</span>
-                                <h4>Préparateur de commandes</h4>
-                                <p><strong>Kazidomi</strong>, Bruxelles</p>
-                                <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.9;">E-commerce : préparation, emballage, contrôle qualité. Respect délais et procédures logistiques.</p>
-                            </div>
-                            <div class="timeline-item">
-                                <span class="timeline-date">2020 - 2022</span>
-                                <h4>Agent de poste CTI (Centre de Tri)</h4>
-                                <p><strong>Bpost</strong>, Bruxelles</p>
-                                <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.9;">Tri colis selon destinations, déchargement camions. Polyvalence et efficacité en équipe.</p>
-                            </div>
-                            <div class="timeline-item">
-                                <span class="timeline-date">2016 - 2019</span>
-                                <h4>Balayeur</h4>
-                                <p><strong>Bruxelles Propreté</strong>, Bruxelles</p>
-                                <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.9;">Nettoyage voies publiques, trottoirs. Travail autonome et en équipe, respect horaires.</p>
-                            </div>
-                        </div>
-                        <p class="experience-summary" style="margin-top: 1.5rem;">
-                            <strong>Bilan :</strong> 6+ ans d'expérience dans secteurs variés ayant développé compétences en 
-                            <strong>travail d'équipe, rigueur, gestion du stress, respect des procédures et ponctualité</strong>.
-                        </p>
-                    </div>
-                    
-                    <!-- Centres d'intérêt -->
-                    <div class="info-block">
-                        <h3 class="block-title">
-                            <i class="fas fa-heart"></i> Centres d'Intérêt
-                        </h3>
-                        <div class="interests-grid">
-                            <div class="interest-item">
-                                <i class="fas fa-basketball-ball"></i>
-                                <span>Basketball</span>
-                            </div>
-                            <div class="interest-item">
-                                <i class="fas fa-futbol"></i>
-                                <span>Futsal (1 an en club)</span>
-                            </div>
-                            <div class="interest-item">
-                                <i class="fas fa-book"></i>
-                                <span>Lecture (Mangas, Policier)</span>
-                            </div>
-                            <div class="interest-item">
-                                <i class="fas fa-gamepad"></i>
-                                <span>Esport</span>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bureautique & Langues -->
+          <div class="additional-skills">
+            <div class="skill-box">
+              <h3><i class="fas fa-laptop"></i> Bureautique</h3>
+              <div class="tags">
+                <span class="tag">Word - Maîtrise</span>
+                <span class="tag">Excel - Avancé</span>
+                <span class="tag">PowerPoint - Maîtrise</span>
+              </div>
+            </div>
+
+            <div class="skill-box">
+              <h3><i class="fas fa-language"></i> Langues</h3>
+              <div class="tags">
+                <span class="tag">🇫🇷 Français - Maternelle</span>
+                <span class="tag">Peul - Maternelle</span>
+                <span class="tag">🇳🇱 Néerlandais - B1</span>
+                <span class="tag">🇬🇧 Anglais - A2</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section À propos -->
+        <section class="section" id="about">
+          <div class="section-header">
+            <h2 class="section-title">À Propos de Moi</h2>
+            <p class="section-subtitle">Mon parcours et mes expériences</p>
+          </div>
+
+          <div class="about-content">
+            <!-- Formation COMPLÈTE -->
+            <div class="info-block">
+              <h3 class="block-title">
+                <i class="fas fa-graduation-cap"></i> Parcours Académique Complet
+              </h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="timeline-date">Janvier 2026 - Aujourd'hui</span>
+                  <h4>Bachelier Informatique de Gestion (Cours du soir)</h4>
+                  <p>ISFCE - Institut Supérieur de Formation Continue, Bruxelles</p>
+                  <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.9;">
+                    Validation des dernières unités pour l'obtention du diplôme en
+                    parallèle d'une alternance.
+                  </p>
                 </div>
-            </section>
-            
-            <!-- Section Contact -->
-            <section class="section" id="contact">
-                <div class="section-header">
-                    <h2 class="section-title">Me Contacter</h2>
-                    <p class="section-subtitle">Une opportunité ? Discutons-en !</p>
+
+                <div class="timeline-item">
+                  <span class="timeline-date">Sept 2025 - Aujourd'hui</span>
+                  <h4>Formation Développeur Web Front-end</h4>
+                  <p>EFP - École de Formation en Alternance, Bruxelles</p>
+                  <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.9;">
+                    Spécialisation intensive : HTML5, CSS3, JavaScript ES6+,
+                    frameworks modernes, responsive design.
+                  </p>
                 </div>
-                
-                <div class="contact-content">
-                    <div class="contact-cards">
-                        <div class="contact-card">
-                            <i class="fas fa-envelope"></i>
-                            <h4>Email</h4>
-                            <p>Boubacar_Bah@outlook.be</p>
-                        </div>
-                        <div class="contact-card">
-                            <i class="fas fa-phone"></i>
-                            <h4>Téléphone</h4>
-                            <p>+32 471 31 92 82</p>
-                        </div>
-                        <div class="contact-card">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h4>Localisation</h4>
-                            <p>Bruxelles, Belgique</p>
-                        </div> 
-                    </div>
-                    
-                    <form class="contact-form" id="contact-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">Nom complet</label>
-                                <input type="text" id="name" placeholder="Votre nom" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" placeholder="votre.email@exemple.com" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" rows="6" placeholder="Votre message..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">
-                            <i class="fas fa-paper-plane"></i> Envoyer
-                        </button>
-                        <p class="form-message" id="form-message"></p>
-                    </form>
+
+                <div class="timeline-item">
+                  <span class="timeline-date">2022 - 2025</span>
+                  <h4>Bachelier Informatique de Gestion / Développement d'applications</h4>
+                  <p>HE Léonard de Vinci (IPL), Bruxelles</p>
+                  <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.9;">
+                    Programmation (Python, Java, JavaScript), SQL, algorithmique.
+                    Grande partie validée avec succès.
+                  </p>
                 </div>
-            </section>
-            
-            <!-- Footer -->
-            <footer class="footer">
-                <p>&copy; 2026 Boubacar Bah - Développeur Web Junior</p>
-                <p>Fait avec <i class="fas fa-heart"></i> et <i class="fas fa-code"></i></p>
-            </footer>
-            
-        </main>
+
+                <div class="timeline-item">
+                  <span class="timeline-date">2021 - 2022</span>
+                  <h4>Bachelier Sciences Informatiques (Bloc 1)</h4>
+                  <p>Université Libre de Bruxelles (ULB)</p>
+                  <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.9;">
+                    Fondamentaux : Python, mathématiques appliquées, logique et
+                    algorithmique.
+                  </p>
+                </div>
+
+                <div class="timeline-item">
+                  <span class="timeline-date">2014 - 2021</span>
+                  <h4>CESS - Sciences Sociales</h4>
+                  <p>Lycée Émile Max, Bruxelles</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Expérience COMPLÈTE -->
+            <div class="info-block">
+              <h3 class="block-title">
+                <i class="fas fa-briefcase"></i> Expérience Professionnelle Complète
+              </h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="timeline-date">2023</span>
+                  <h4>Agent de nettoyage de tapis</h4>
+                  <p><strong>Composil</strong>, Bruxelles</p>
+                  <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.9;">
+                    Nettoyage professionnel (aspiration, détachage, injection-extraction).
+                    Respect HSE, contrôle qualité, autonomie.
+                  </p>
+                </div>
+
+                <div class="timeline-item">
+                  <span class="timeline-date">2022 - 2025</span>
+                  <h4>Chargeur</h4>
+                  <p><strong>Renewi</strong>, Vilvorde</p>
+                  <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.9;">
+                    Collecte déchets, chargement/déchargement conteneurs. Respect strict
+                    sécurité, travail d'équipe dynamique.
+                  </p>
+                </div>
+
+                <div class="timeline-item">
+                  <span class="timeline-date">2022 - 2023</span>
+                  <h4>Préparateur de commandes</h4>
+                  <p><strong>Kazidomi</strong>, Bruxelles</p>
+                  <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.9;">
+                    E-commerce : préparation, emballage, contrôle qualité. Respect délais
+                    et procédures logistiques.
+                  </p>
+                </div>
+
+                <div class="timeline-item">
+                  <span class="timeline-date">2020 - 2022</span>
+                  <h4>Agent de poste CTI (Centre de Tri)</h4>
+                  <p><strong>Bpost</strong>, Bruxelles</p>
+                  <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.9;">
+                    Tri colis selon destinations, déchargement camions. Polyvalence et
+                    efficacité en équipe.
+                  </p>
+                </div>
+
+                <div class="timeline-item">
+                  <span class="timeline-date">2016 - 2019</span>
+                  <h4>Balayeur</h4>
+                  <p><strong>Bruxelles Propreté</strong>, Bruxelles</p>
+                  <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.9;">
+                    Nettoyage voies publiques, trottoirs. Travail autonome et en équipe,
+                    respect horaires.
+                  </p>
+                </div>
+              </div>
+              <p class="experience-summary" style="margin-top: 1.5rem;">
+                <strong>Bilan :</strong> 6+ ans d'expérience dans secteurs variés ayant
+                développé compétences en
+                <strong>travail d'équipe, rigueur, gestion du stress, respect des procédures et
+                ponctualité</strong>.
+              </p>
+            </div>
+
+            <!-- Centres d'intérêt -->
+            <div class="info-block">
+              <h3 class="block-title">
+                <i class="fas fa-heart"></i> Centres d'Intérêt
+              </h3>
+              <div class="interests-grid">
+                <div class="interest-item">
+                  <i class="fas fa-basketball-ball"></i>
+                  <span>Basketball</span>
+                </div>
+                <div class="interest-item">
+                  <i class="fas fa-futbol"></i>
+                  <span>Futsal (1 an en club)</span>
+                </div>
+                <div class="interest-item">
+                  <i class="fas fa-book"></i>
+                  <span>Lecture (Mangas, Policier)</span>
+                </div>
+                <div class="interest-item">
+                  <i class="fas fa-gamepad"></i>
+                  <span>Esport</span>
+                </div>
+              </div>
+y            </div>
+          </div>
+        </section>
+
+        <!-- Section Contact -->
+        <section class="section" id="contact">
+          <div class="section-header">
+            <h2 class="section-title">Me Contacter</h2>
+            <p class="section-subtitle">Une opportunité ? Discutons-en !</p>
+          </div>
+
+          <div class="contact-content">
+            <div class="contact-cards">
+              <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p>Boubacar_Bah@outlook.be</p>
+              </div>
+              <div class="contact-card">
+                <i class="fas fa-phone"></i>
+                <h4>Téléphone</h4>
+                <p>+32 471 31 92 82</p>
+              </div>
+              <div class="contact-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Localisation</h4>
+                <p>Bruxelles, Belgique</p>
+              </div>
+            </div>
+
+            <form class="contact-form" id="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Nom complet</label>
+                  <input type="text" id="name" placeholder="Votre nom" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="votre.email@exemple.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="6" placeholder="Votre message..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                <i class="fas fa-paper-plane"></i> Envoyer
+              </button>
+              <p class="form-message" id="form-message"></p>
+            </form>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <p>&copy; 2026 Boubacar Bah - Développeur Web Junior</p>
+          <p>Fait avec <i class="fas fa-heart"></i> et <i class="fas fa-code"></i></p>
+        </footer>
+      </main>
     </div>
-    
+
     <!-- Bouton scroll to top -->
     <button class="scroll-top" id="scroll-top">
-        <i class="fas fa-arrow-up"></i>
+      <i class="fas fa-arrow-up"></i>
     </button>
 
     <!-- JavaScript -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
